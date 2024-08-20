@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col"></div>
+    <div class="col">
+
+        <h1><strong>Secret World</strong></h1>
+
+    </div>
+    <div class="col">
+
+      <h3><strong>Cüzdan : 50 Dinar</strong></h3>
+
+    </div>
+
+</div>
+
+<br><br>
+
+<div class="card" style="width: 75rem; border-color: blue;">
+    <div class="card-body">
+      <h5 class="card-title">1. Bölüm</h5>
+      <h5 class="card-title"><strong>Taze Başlangıç</strong></h5>
+      <img src="{% static 'adventureapp/solucan.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem ; height: 30rem;">
+      <ol>
+      <p class="card-text">Yağmurlu bir günde yoldan geçen tüccar arabası hızlı bir şekilde en yakın köye varmayı çalışıyodur.</p>
+      <p class="card-text">Hava yavaş yavaş açılmaya başlamıştı ki yer sallanmaya başladı.</p>
+      <p class="card-text">Sallanmalar ciddi şekilde artmıştı ki yerden büyük bir solucana benzeyen bir canavar çıkmış ve tüccar arabasındakiler de korkmuş bir şekilde donakalmıştı.</p>
+    </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: blue;">
+  <div class="card-body">
+    <img src="{% static 'adventureapp/kılıç.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+    <ol>
+    <p class="card-text">Canavar solucan tüccar arabasına doğru hızlı bir şekilde yaklaşırken bir kılıcın kınından çıkma sesi duyuldu.</p>
+    <p class="card-text">Canavar solucan tam tüccar arabasına dişini geçirecekken bir anda kafası kesildi.</p>
+    <p class="card-text">Olanları hayretler içinde izleyen tüccarlar canavar solucanın kafasını kesen kişinin 16 yaşında bir genç olduğunu gördü.</p>
+    </ol>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: blue;">
+  <div class="card-body">
+    <img src="{% static 'adventureapp/yol.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+    <ol>
+    <p class="card-text">Kılıcı canavarın sert etinden dolayı kırılan genç tüccarlara heyecanlı bir şekilde kendi isminin Katara olduğunu söyledi ve büyük bir turnuva düzenlenen şehrin nerede olduğunu sordu.</p>
+    <p class="card-text">Tüccarlar şehrin nerede olabileceğini anlattıktan sonra orda yeni ve keskin kılıç bulabileceğini öğrendi.</p>
+    <p class="card-text">Bu haberden ve tüccarları canavardan koruduğu için aldığı ödülden sonra yola koşturarak devam etti</p>
+    </ol>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: blue;">
+  <div class="card-body">
+    <img src="{% static 'adventureapp/ayrım.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+    <ol>
+    <p class="card-text">Yola doğru koştururken bir anda duran Katara bir yol ayrımına gelmişti. Bu iki yol da şehre ulaşıyordu.</p>
+    <p class="card-text">Sağdaki yol önünde kurumuş kandan bile tehlikeli yol olduğu belli oluyordu.</p>
+    <p class="card-text">Soldaki yol bir çiçek bahçesi gibi koktuğundan insana huzur veren bir yapısı vardı.</p>
+    </ol>
+    <a href="{% url 'adventureapp:rightpath' %}" class="btn btn-danger">Sağ Yol</a>
+    <a href="{% url 'adventureapp:leftpath' %}" class="btn btn-danger">Sol Yol</a>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

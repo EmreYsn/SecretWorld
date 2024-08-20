@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col"></div>
+    <div class="col">
+  
+        <h1><strong>Secret World</strong></h1>
+  
+    </div>
+    <div class="col">
+  
+      <h3><strong>Cüzdan : 25 Dinar</strong></h3>
+  
+    </div>
+  
+  </div>
+  
+  <br><br>
+
+  <div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+      <h5 class="card-title">3. Bölüm</h5>
+      <h5 class="card-title"><strong>Turnuva</strong></h5>
+      <img src="{% static 'adventureapp/turnuva.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+      <ol>
+      <p class="card-text">Şehre gelen Katara hafif de olsa bir zırh almak istemişti ve 20 dinarlık hafif bir zırh aldı.</p>
+      <p class="card-text">Bu şehirdeki turnuvada toplamda 32 kişiden oluşup 5 tur sürecektir.</p>
+      <p class="card-text">Bu turnuvada bayılan , ölen veya sınır çizgisini geçen kişi kaybetmiş sayılacaktır ve kazanan ise her tur belli bir tutar ödül alacaktır.</p>
+      <p class="card-text">1. olan kişi ise 20.000 dinar para ödülü alacaktır.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/icekatana.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Bu turnuvada garanti çeyrek finale çıkacağı düşünülen toplam 6 kişi var.Bunlar arasında en göze çarpan kişi İzumi adında soğuk bakışlı bir kızdı.</p>
+      <p class="card-text">İlk etapta Katara'nın karşısına zırhına güvenen biri vardı ama ağır zırhı yüzünden yavaş hareket edebilen birisiydi.</p>
+      <p class="card-text">Katara hızlı bir şekilde bir yara verdiğinde ilk rakibi birden donmaya başladı ve Katara bu duruma inanamadı.</p>
+      <p class="card-text">Bunu kılıcın gücü olduğunu anlayan Katara hızlı bir şekilde ilk turu geçti.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/karşılaşmaiki.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Katara ilk turdan sonra gece vakti kılıcına alışabilmek ve özelliğini anlamak için sıkı bir şekilde antrenman yapıyordu.</p>
+      <p class="card-text">Katara'nın ikinci turdaki rakibi aynı Katara gibi hafif zırhlı ve kılıç kabiliyetine güvenen birisiydi.</p>
+      <p class="card-text">Rakibi Katara'nın ilk etabını izlediği için sıyrık bile almamaya çalışıyordu ve Katara'nın hep boynunu hedefliyordu dolayısıyla bu durum bir hız testine dönmüştü.</p>
+      <p class="card-text">Rakibi Katara'nın vuruşlarını iyi okumaya başlamış ve bunu kendi leyhine kullanıyordu.</p>
+      <p class="card-text">Rakibi Katara'nın boynuna kılıcını daha da yaklaştırırken en sonunda kılıcı Katara'nın boynuna doğru geliyordu ve bunu anlayan Katara rakibinden uzaklaşmak isteyerek kılıcını savurduğunda kılıcı bir buzdan duvar yaparak rakibi sınır çizgisinden geçirmişti.</p>
+      <p class="card-text">Ne olduğunu tam anlayamasa da kazanan Katara'ydı.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/dost.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">İkinci turdan sonra dikkatleri üzerine yavaş yavaş çekmeye başlayan Katara durumundan oldukça memnundu.</p>
+      <p class="card-text">Gece vakti yine antrenman yaparken yavaş yavaş bir gölgenin ona doğru geldiğini gördü ve biraz tedirgin oldu.</p>
+      <p class="card-text">O gelen kişinin ikinci etapta yendiği rakibi olduğunu görünce biraz afallamıştı.</p>
+      <p class="card-text">Rakibi adının Sai olduğunu ve birlikte antrenman yapmak istediğini söyleyince sebebini soran Katara'ya da onu yenen kişinin bu turnuvayı kazanması istediğini söylemişti.</p>
+      <p class="card-text">Katara'da ne zararı olur diye düşünmüştü ve Sai de üstü açık bir antrenman merkezinde mi yoksa üstü kapalı bir antrenman merkezinde mi yapmak istediğini sordu.</p>
+      </ol>
+      <a href="{% url 'adventureapp:open' %}" class="btn btn-danger">Üstü Açık Antrenman Merkezi</a>
+      <a href="{% url 'adventureapp:close' %}" class="btn btn-danger">Üstü Kapalı Antrenman Merkezi</a>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}

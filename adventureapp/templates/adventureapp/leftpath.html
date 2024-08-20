@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+
+  <div class="col"></div>
+  <div class="col">
+
+      <h1><strong>Secret World</strong></h1>
+
+  </div>
+  <div class="col">
+
+    <h3><strong>Cüzdan : 1550 Dinar</strong></h3>
+
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+      <h5 class="card-title">2. Bölüm</h5>
+      <h5 class="card-title"><strong>Ayırılan Yollar</strong></h5>
+      <img src="{% static 'adventureapp/ağaç.webp' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+      <ol>
+      <p class="card-text">Katara kılıcının da olmaması nedeniyle sola doğru gitmeyi mantıklı bulmuştu.</p>
+      <p class="card-text">Her renkten çiçeklere bakarak ve çiçekleri koklayarak gelen Katara yorulmaya başlamıştı.</p>
+      <p class="card-text">Çiçeklerle dolu bir yerde sadece bir tane ağaç olduğunu gören Katara onun altında oturarak uyuyakalmıştı.</p>
+      <p class="card-text">Uyandığındaysa gördüğü şeye çok şaşırmıştı.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+  <div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/kaya.webp' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Uyandığında bütün çiçekler solmuş ve altında oturduğu ağaçtaysa sadece dalları kalmıştı.</p>
+      <p class="card-text">Olanlara anlam veremeyen Katara hızlı bir şekilde yoluna devam etmeye karar vermişti.</p>
+      <p class="card-text">Katara yoluna devam ederken bir anda tiz bir ses duymuştu ve o ses hızlıca yaklaşıyordu.</p>
+      <p class="card-text">Gelen şeyin ne olduğunu anlamak isteyen Katara bir kayanın arkasından gözetliyordu.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/ejderha.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Gelen şey tiz sesine rağmen koca cüsseli bir ejderhaydı ve burdaki çiçeklerin ve ağacın enerjisini sömüren şey o gibi gözüküyordu.</p>
+      <p class="card-text">Şu an kılıcının da olmaması sebebiyle ejderha onu görürse işinin biteceği kesindi o yüzden o geçene kadar Katara orda bekledi.</p>
+      <p class="card-text">Ordan uçarak geçtikten sonra yoluna devam eden Katara'nın kafasında tek birşey vardı:Bir kılıç.</p>
+      <p class="card-text">Katara devam ederken yavaştan şehirin duvarları görünmeye başlamıştı.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+    <img src="{% static 'adventureapp/bluekatana.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Duvarlara doğru yaklaşırken Katara şehrin hemen yanındaki köye varmıştı.</p>
+      <p class="card-text">Bu köyde han , çeşitli tüccarlar gibi bir sürü dükkan vardı.</p>
+      <p class="card-text">Katara dükkanlara baka baka ilerlerken kılıç ve zırh satan bir tüccarın dükkanını görmüştü.</p>
+      <p class="card-text">O dükkanda çeşitli kılıçlar arasından Katara'nın dikkatini çeken kılıç keskin , mavi saplı ve süslü bir kına sahipti ama neredeyse bütün parasını vermesi gerekiyordu.</p>
+      </ol>
+      <a href="{% url 'adventureapp:blue' %}" class="btn btn-danger">Katanayı Al</a>
+      <a href="{% url 'adventureapp:safe' %}" class="btn btn-danger">Katanayı Alma</a>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}

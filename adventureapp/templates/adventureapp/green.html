@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col"></div>
+    <div class="col">
+  
+        <h1><strong>Secret World</strong></h1>
+  
+    </div>
+    <div class="col">
+  
+      <h3><strong>Cüzdan : 1550 Dinar</strong></h3>
+  
+    </div>
+  
+  </div>
+  
+  <br><br>
+
+  <div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+      <h5 class="card-title">3. Bölüm</h5>
+      <h5 class="card-title"><strong>Turnuva</strong></h5>
+      <img src="{% static 'adventureapp/turnuva.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+      <ol>
+      <p class="card-text">Şehre gelen Katara şehirde de geçireceği günleri düşünerek 800 dinarlık hem dayanıklı hem de hareketini kısıtlamayan bir zırh aldı.</p>
+      <p class="card-text">Bu şehirdeki turnuvada toplamda 32 kişiden oluşup 5 tur sürecektir.</p>
+      <p class="card-text">Bu turnuvada bayılan , ölen veya sınır çizgisini geçen kişi kaybetmiş sayılacaktır ve kazanan ise her tur belli bir tutar ödül alacaktır.</p>
+      <p class="card-text">1. olan kişi ise 20.000 dinar para ödülü alacaktır.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/poisen.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Bu turnuvada garanti çeyrek finale çıkacağı düşünülen toplam 6 kişi var. Bunlar arasında en göze çarpan kişi İzumi adında soğuk bakışlı bir kızdı.</p>
+      <p class="card-text">İlk etapta Katara'nın karşısına zırhına güvenen biri vardı ama ağır zırhı yüzünden yavaş hareket edebilen birisiydi.</p>
+      <p class="card-text">Katara hızlı bir şekilde bir yara verdiğinde ilk rakibi birden yere düştü ve bayıldığını sanan Katara rakibinin öldüğünü görünce dehşete düşmüştü.</p>
+      <p class="card-text">Katara bu kılıcın gücünden korkmuş olsa bile bu kılıcın gücü sayesinde hızlı bir şekilde ilk turu geçti.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/karşılaşmaiki.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Katara ilk turdan sonra ilk rakibinin ne yüzünden öldüğünü merak etmiş ve gecenin sonunda kılıcın zehirli olduğunu ve rakibinin o yüzden hızlıca öldüğünü anlamıştı.</p>
+      <p class="card-text">Katara'nın ikinci turdaki rakibi aynı Katara gibi hafif zırhlı ve kılıç kabiliyetine güvenen birisiydi.</p>
+      <p class="card-text">Rakibi Katara'nın ilk etabını izlediği için sıyrık bile almamaya çalışıyordu ve Katara'nın hep bir açığını arıyordu.</p>
+      <p class="card-text">Rakibi Katara'nın vuruşlarını iyi okumaya başlamış ve bunu leyhine kullanıyordu.</p>
+      <p class="card-text">Katara rakibinin kaçma hamlelerini okumaya çalışarak onu çizgi dışına çıkarmayı hedefliyordu ve bunu hızlı ama basit saldırılarla yapmayı amaçlıyordu.</p>
+      <p class="card-text">Rakibi hızlı ve kıvrak bir saldırıyla boynunu kesmeye çalışırken Katara öleceğini düşünüp kılıcını çaresizlikle salladığında kılıcın verdiği zehir dalgası ile rakibi hızlıca ölürken Katara'da olayların etkisi ile bayılır.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: gold;">
+    <div class="card-body">
+        <img src="{% static 'adventureapp/room.webp' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Katara yavaş yavaş gözlerini açtığında hastanenin tavanını yanında ise tanıdık bir yüz , İzumi'yi görür.</p>
+      <p class="card-text">Katara ona bu kılıcı nasıl bulduğunu anlatır ve ne yapcağını bilemediğini sorar.</p>
+      <p class="card-text">İzumi'de buraya katılan herkesin zaten ölme ihtimalini kabullenerek geldiğini ve içini biraz rahat tutması gerektiğini söyler.</p>
+      <p class="card-text">Katara'da nasıl bu kadar soğukkanlı olduğunu merak ettiğini söyleyince İzumi ona bu özelliğinin nedeninin bir sır olduğunu ve anlatamayacağını söyler.</p>
+      <p class="card-text">Katara'da madem anlatmıyosun bari beraber antrenman yapmaya izin ver deyince İzumi' de peki madem der.</p>
+      <p class="card-text">İzumi'de antrenman yerinin ilk karşılaştığımız ormanlık alan mı yoksa turnuva alanından uzak bir yerdeki büyük park mı diye sorar.</p>
+      </ol>
+      <a href="{% url 'adventureapp:forest' %}" class="btn btn-danger">Ormanlık Alan</a>
+      <a href="{% url 'adventureapp:park' %}" class="btn btn-danger">Büyük Park</a>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}

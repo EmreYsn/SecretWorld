@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+
+  <div class="col"></div>
+  <div class="col">
+
+      <h1><strong>Secret World</strong></h1>
+
+  </div>
+  <div class="col">
+
+    <h3><strong>Cüzdan : 1550 Dinar</strong></h3>
+
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+      <h5 class="card-title">2. Bölüm</h5>
+      <h5 class="card-title"><strong>Ayırılan Yollar</strong></h5>
+      <img src="{% static 'adventureapp/orman.jpeg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+      <ol>
+      <p class="card-text">Katara kendine güven vererek sağ yolu seçmiş ve yolda ilerlerken gördüğü iskeletlerle içine bir ürperti gelmişti.</p>
+      <p class="card-text">Yol ormanlarla doluyken birden açık bir alana çıkmıştı.</p>
+      <p class="card-text">Açık alanda hızlı ilerleyen bir silüet dikkatle giden bir şövalyenin kafasını 2 saniyede kesmişti.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+      <img src="{% static 'adventureapp/silüet.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+      <ol>
+      <p class="card-text">Bu olanlar karşısında irkilen Katara hemen yanındaki ağaca saklanarak silüetin nerde olduğunu kestirmeye çalıştı.</p>
+      <p class="card-text">Görüş alanında silüeti göremeyen Katara bir anda ensesinde soğuk bir çelik hisssetti.</p>
+      <p class="card-text">Kılıcı tutan kişinin sesi ona "Sakince arkanı dön." diyordu.</p>
+      <p class="card-text">Arkasını döndüğü gibi soğuk bakışlı bir kızın ona katana tuttuğunu gördü.</p>
+      </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+    <img src="{% static 'adventureapp/katana.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+    <ol>
+      <p class="card-text">Katara durumdan bir çıkış noktası bulamıyordu ki kız katanasını yavaşça indirdi ve kınına soktu.</p>
+      <p class="card-text">Şaşkınca bakan Katara sebebini sorduğunda silahsız birine saldırmak istemediğini söyledi.</p>
+      <p class="card-text">Katara ona turnuvaya gideceğini ve orda onla kapışmak istediğini söyledi.</p>
+      <p class="card-text">Tam kız gidecekken Katara son olarak ismini söylemesini isteyince kız isminin İzumi olduğunu söyledi.</p>
+    </ol>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="width: 75rem; border-color: red;">
+    <div class="card-body">
+    <img src="{% static 'adventureapp/greenkatana.jpg' %}" class="card-img-top" alt="..." style="width: 65rem; height: 30rem;">
+        <ol>
+      <p class="card-text">Katara kendine gelene kadar biraz dinlenmiş ve durumunu tekrar gözden geçirmişti.</p>
+      <p class="card-text">İzumi'nin ondan daha hızlı ve güçlü olduğu gün gibi ortadaydı ve bu durumla nasıl yüzleşeceğini bilmiyordu.</p>
+      <p class="card-text">Orda kara kara düşünürken gözünü kamaştıran bir ışık görmüştü ki ışığın kaynağının İzumi'nin kadar olmasa da iyi bir katana olduğunu gördü.</p>
+      <p class="card-text">Katananın yeşil renkli olması ve biraz tuhaf kokması Katara'yı düşündürmüştü.</p>
+        </ol>
+      <a href="{% url 'adventureapp:green' %}" class="btn btn-danger">Katanayı al</a>
+      <a href="{% url 'adventureapp:safe' %}" class="btn btn-danger">Katanayı alma</a>
+    </div>
+  </div>
+
+<br>
+
+{% endblock %}
